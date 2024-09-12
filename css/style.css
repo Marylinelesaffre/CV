@@ -9,22 +9,37 @@
 body {
   background-color: brown;
 }
-.slider {
+.slider{
+  position: relative;
+}
+ .slider-content{
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 30%;
+ 
+  
+ }
+ .slider-content {
+ 
+ }
+
+/*.slider {
   height: 100%;
   position: relative;
- }
+ } 
  .slider-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
+/* }
 
 .slider-content h1 {
   color: white;
   font-size: 5rem;
-}
+} 
  .navbar {
   display: flex;
   justify-content: space-between;
@@ -52,6 +67,7 @@ body {
   margin: 0 10px;
   
 }
+/*
 .about-me-section {
   padding-top: 30px;
   background-color: aqua;
@@ -70,7 +86,7 @@ body {
     font-size: 40px;
     margin-top: 50px;
 }
-
+/*
 
   
   
@@ -93,10 +109,10 @@ body {
         background-color: blueviolet;
     } 
 
-    .slider{
-       height: ;
-       width: ;
-    }
+    .slider {
+      height: 100%;
+      position: relative;
+     }
   
   
   }
