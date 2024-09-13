@@ -6,8 +6,8 @@
 }
 
 /*MOBILE FIRST*/
-body {
-  background-color: brown;
+body{
+  background-color:  rgb(13, 144, 159);
 }
 
 .slider {
@@ -42,6 +42,12 @@ body {
 
 }
 
+.navbar a {
+  text-align: center;
+}
+#about-me-section{
+  background-color: rgb(13, 144, 159);
+}
 .titre {
   color: white;
   text-align: center;
@@ -73,8 +79,11 @@ body {
 
 }
 
+#expériences-section{
+  background-color: brown;
+}
 
-
+/*reseau*/
 
 
 /*.slider {
@@ -152,6 +161,7 @@ body {
   body {
     background-color: blue;
   }
+
   .slider-content {
     font-size: 40px;
     position: absolute;
@@ -184,13 +194,10 @@ body {
     text-align: center;
   }
 
-
-
-
-
-
-
-
+  .image {
+    width: 300px;
+    height: 300px;
+  }
 
   .photo {
     display: flex;
@@ -198,4 +205,9 @@ body {
     align-items: center;
     padding: 5% 0;
   }
+  .navbar{
+    cursor: pointer;
+  }
 }
+
+
