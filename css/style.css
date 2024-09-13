@@ -12,39 +12,60 @@ body{
 
 .slider {
   position: relative;
+
+  
+
 }
 
-.slider-content {
+.slider-content{
   text-align: center;
   color: white;
   position: absolute;
   top: 30%;
+  left: 50px;
+  
+ 
+
 }
 
 .navbar {
+ background-color: transparent;
   display: flex;
   position: fixed;
   top: 0;
   padding: 10px 15px;
   height: 50px;
-  background-color: black;
-  color: white;
-
+  justify-content: space-between;
+  align-items: center;
+ 
+ 
+  
 }
 
+
 .navbar ul {
-  list-style: none;
+  list-style-type: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  
 }
 
 .navbar li {
   margin: 0 10px;
-
 }
 
 .navbar a {
-  text-align: center;
+  text-decoration: none;
+  color: white;
+  line-height: 1.5;
 }
+
+
+
+
+
+
 #about-me-section{
   background-color: rgb(13, 144, 159);
 }
@@ -148,7 +169,7 @@ body{
     font-size: 40px;
     margin-top: 50px;
 }
-/*
+*/
 
   
   
@@ -161,15 +182,23 @@ body{
   body {
     background-color: blue;
   }
+.slider{
+  position: relative;
+}
 
   .slider-content {
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
+    position:absolute;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(-50%);
   }
+  .titre {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  
 }
 
 /*PC*/
@@ -190,8 +219,8 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    transform: translate(-50%);
   }
 
   .image {
@@ -207,7 +236,22 @@ body{
   }
   .navbar{
     cursor: pointer;
+    width: 100%;
+ 
+  }
+  .titre {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .colonne{
+  display: flex;
+  flex-direction: row;
+
+
+  }
+  .card{
+    width: 100%;
   }
 }
-
-
