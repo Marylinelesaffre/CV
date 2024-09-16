@@ -20,32 +20,36 @@
                 </div>
             </div>
 
-    </header>
+    
     <nav class="navbar">
-        <ul class="nav-left">
+        <div class="nav-burger" onclick="toggleMenu()">
+            <div class="open"></div>
+            <div class="open"></div>
+            <div class="open"></div>
+        </div>
+        
 
-
-            <ul class="nav-right">
-                <li>
-                    <a href="#Accueil-section"> Accueil</a>
-                </li>
-                <li>
-                    <a href="#about-me-section">à propos</a>
-                </li>
-                <li>
-                    <a href="#expériences-section">réalisation</a>
-                </li>
-                <li>
-                    <a href="#passions-section">passions</a>
-                </li>
-                <li>
-                    <a href="#contact-section">contact</a>
-                </li>
-
-            </ul>
+        <ul class="nav">
+            <li>
+                <a href="#Accueil-section"> Accueil</a>
+            </li>
+            <li>
+                <a href="#about-me-section">à propos</a>
+            </li>
+            <li>
+                <a href="#expériences-section">expériences</a>
+            </li>
+            <li>
+                <a href="#contact-section">contact</a>
+            </li>
+        </ul>
+        
+        
     </nav>
+    
     </section>
-
+    <script src="script.js"></script>
+</header>
     <main>
 
         <section id="about-me-section">
@@ -69,8 +73,8 @@
 
             <h1 class="titre">Compétences</h1>
             <div class="colonne">
-                <div class="card">
-                    <p><strong>solft skills et hard skills</strong></p>
+                <div class="card" id="droite">
+                    <p><strong>solft skills </strong></p>
                     <li>
                         Autonome Maquetter sur figma
                     </li>
@@ -79,60 +83,36 @@
                         Capacité à travailler en équipe
                     </li>
                 </div>
-                <div class="card">
-                    <p><strong>expérience pro</strong></p>
-                    <ul>
-                        <li>Stage centre social
-                            chargé de communication numérique
-                            15 avril au 15 mai 2024
-                            Boulgne-Sur-Mer
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <ul>
-                            <il></il>
-                            <il></il>
-                            <il></il>
-                            <il></il>
-                            <il></il>
-                        </ul>
-                    </ul>
-
-
-                    <div class="passions">
-                        passion
-
-                    </div>
-
+                <div class="card" id="gauche">
+                    <p><strong>hard skills </strong></p>
+                    <li>
+                        Autonome Maquetter sur figma
+                    </li>
+                    </li>
+                    <li>
+                        Capacité à travailler en équipe
+                    </li>
                 </div>
             </div>
-        </section>
+            <h1 class="titre">expériences</h1>
+            <div class="card" id="expérience">
 
 
-        <section id="expériences-section">
+                Stage centre social
+                chargé de communication numérique
+                15 avril au 15 mai 2024
+                Boulgne-Sur-Mer
 
-
-
-
-
-
-
-
+            </div>
 
         </section>
-
-
-        <section id="passions-section">
-
-
-
-
-        </section>
-
-
 
 
         <section id="contact-section">
+
+
+
+
 
 
 
