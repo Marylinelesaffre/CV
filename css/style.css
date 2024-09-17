@@ -90,22 +90,22 @@ p{
 }
 .nav {
   list-style-type: none;
-  display: none; /* Hidden by default on mobile */
+  display: none; 
   flex-direction: column;
   margin: 0;
   padding: 0;
-  top: 60px; /* Adjust based on navbar height */
+  top: 60px; 
   left: 0;
   width: 100%;
   background: black;
   position: absolute;
-  z-index: 999; /* Ensure it's above other content */
+  z-index: 999; 
 }
 .nav.active {
   display: flex;
 }
 
-/* Navigation Menu Links Styles */
+
 .nav a {
   display: block;
   text-decoration: none;
@@ -296,14 +296,14 @@ footer{
  
   }
   .nav {
-    display: flex; /* Display normally on larger screens */
-    position: static; /* Position it normally in the flow of the document */
+    display: flex;
+    position: static; 
     flex-direction: row;
-    background: transparent; /* Transparent background for desktop */
-    top: auto; /* Remove top offset */
-    left: auto; /* Remove left offset */
-    width: auto; /* Adjust width for larger screens */
-    z-index: auto; /* Reset z-index */
+    background: transparent; 
+    top: auto; 
+    left: auto; 
+    width: auto; 
+    z-index: auto; 
   }
   .titre {
     color: white;
