@@ -43,8 +43,6 @@ body{
   }
 }
 
-
-
 .slider {
   position: relative;
   height: 100%;
@@ -75,7 +73,6 @@ p{
   align-items: center;
   z-index: 1000;
 }
-
 
 .nav-burger {
   display: flex;
@@ -236,17 +233,41 @@ main{
 }
 
 .card {
-  height: 150px;
   padding: 35px;
   border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.45);
   margin-top: 10px;
 }
-
+.mad-skill-img{
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+.images-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 p{
   padding: 10px 0px;
 }
+.mad-skills{
+  text-align: center;
+  
+  
+}
+.mad-skills-img{
+  width: 100%; /* Ajuste la taille comme souhaité */
+  height: auto; /* Garde les proportions */
+  margin-bottom: 10px; /* Espace entre les images */
+}
+#art{
+  text-align: center;
+  color: black;
+}
+
 #experiences-section{
   min-height: 100%;
 }
@@ -419,10 +440,8 @@ footer{
     width: 50%;
     height: 50px;
 
-    
  }
 
-  
   .nav {
     display: flex;
     position: static; 
@@ -536,6 +555,18 @@ footer{
   #expérience{
     text-align: center;
   }
+
+  .mad-skills-img {
+    max-width: 300px; /* Limite la largeur pour les grands écrans */
+    margin-top: 10px; /* Espace entre les images */
+}
+
+.images-container {
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
 }
 
 
