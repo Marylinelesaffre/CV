@@ -4,12 +4,6 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/*body{
-  */
-
-
-/*MOBILE FIRST*/
 body{
   background: linear-gradient(2deg, #d7b8ff, #868587, #7117e7);
   background-size: 600% 600%;
@@ -41,7 +35,10 @@ body{
   to {
     transform: translateY(-330px);
   }
+  
 }
+
+/*MOBILE FIRST*/
 
 .slider {
   position: relative;
@@ -62,6 +59,7 @@ body{
 }
 p{
   color: white;
+  
 }
 .navbar {
   background-color:transparent;
@@ -127,15 +125,10 @@ p{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
-
 }
 #dark{
   display: flex;
   justify-content: flex-end;
- 
-
- 
 }
 
 .dark-mode{
@@ -144,61 +137,13 @@ p{
   animation: AnimationDarkMode 35s ease infinite;
   color: rgb(255, 255, 255);}
    .button{color:rgb(0, 0, 0); background-color:rgb(255, 255, 255);}
-  
-  
-/*
-.navbar {
- background-color: transparent;
-  display: flex;
-  position: fixed;
-  top: 0;
-  padding: 10px 15px;
-  height: 50px;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-   }
-
-
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  
-}
-
-.navbar li {
-  margin: 0 10px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  line-height: 1.5;
-}
-.nav{
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.nav a {
-  text-decoration: none;
-  color: white;
-  line-height: 1.5;
-  padding: 10px;
-}
-.nav a:hover{
-  background: #444;
-}*/
 
 main{
   flex: 1;
   margin-bottom: 50px;
 }
 
-.titre {
+.title {
   color: white;
   text-align: center;
   font-size: 35px;
@@ -271,7 +216,7 @@ p{
 #experiences-section{
   min-height: 100%;
 }
- #expérience{
+ #experience{
   height: 50%;
   
 }
@@ -374,7 +319,7 @@ footer{
 
 /*TABETTE*/
 
-@media (min-width:900px) {
+@media (min-width:700px) {
   body {
     background-color: blue;
   }
@@ -388,15 +333,28 @@ footer{
     position:absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
   }
-  .titre {
+  .title {
     color: white;
     text-align: center;
     font-size: 50px;
     margin-top: 20px;
   }
-  
+  ul {
+    list-style-type: none; 
+    padding: 0;
+  }
+ li{
+  text-align: center;
+ }
+.colonne p{
+  text-align: center;
+}
+#skills{
+  text-align: center;
+}
 }
 
 /*PC*/
@@ -451,7 +409,7 @@ footer{
     font-size: 20px;
     text-align: center;
   }
-  .titre {
+  .title {
     color: white;
     text-align: center;
     font-size: 60px;
@@ -480,19 +438,14 @@ footer{
     transition-duration: 0.3s;
     transform: scale(1.2);
   }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: 0.3s;
-    transform: scale(1.2);
-  }
+  
   /* linkdin*/
   .containerThree:hover {
     background-color: #0072b1;
     transition-duration: 0.3s;
     transform: scale(1.2);
   }
-  /* Whatsapp*/
+  /* github*/
   .containerFour:hover {
     background-color: #012b26;
     transition-duration: 0.3s;
@@ -528,7 +481,7 @@ footer{
     }
   }
 
-  .colonne{
+  .colomn{
   display: flex;
   flex-direction: column;
   }
@@ -536,12 +489,12 @@ footer{
     width: 100%;
   }
 
-  #droite{
+  #right{
     width: 50%;
     align-self: flex-start;
     text-align: center;
   }
-  #gauche{
+  #left{
     width: 50%;
     align-self: flex-end;
     text-align: center;
@@ -552,7 +505,7 @@ footer{
   .nav-burger{
     display: none;
   }
-  #expérience{
+  #experience{
     text-align: center;
   }
 
