@@ -43,22 +43,11 @@ body{
   }
 }
 
-.scroll-bg {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  padding-bottom: 330px;
-  background-color: #E8BA9B;
-  background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');
-  background-size: cover;
-  animation: scrollBg 35s linear forwards;
-}
+
 
 .slider {
   position: relative;
   height: 100%;
-  
-
 }
 
 .slider-content{
@@ -77,12 +66,11 @@ p{
   color: white;
 }
 .navbar {
-  background-color: transparent;
+  background-color:transparent;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 50%;
   padding: 10px 15px;
-  height: 50%;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
@@ -131,15 +119,26 @@ p{
   line-height: 1.5;
   padding: 10px;
 }
+.container-dark {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  z-index: 1000; 
+}
 .button-dark{
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
+
 }
 #dark{
   display: flex;
   justify-content: flex-end;
+ 
+
+ 
 }
 
 .dark-mode{
@@ -417,8 +416,9 @@ footer{
   }
   .navbar{
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     height: 50px;
+
     
  }
 
@@ -537,3 +537,5 @@ footer{
     text-align: center;
   }
 }
+
+

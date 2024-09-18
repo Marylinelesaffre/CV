@@ -1,5 +1,5 @@
 $(function () {
-    $(".toggle"). on("click",function () {
+    $(".toggleMenu"). on("click",function () {
         if ($(".navbar").hasClass("active")) {
             $(".navbar").removeClass("active")
             $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>")
@@ -11,6 +11,7 @@ $(function () {
     })
     
 })
+
 function toggleMenu() {
     const nav = document.querySelector('.nav');
     nav.classList.toggle('active');
