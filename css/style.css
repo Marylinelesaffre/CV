@@ -179,7 +179,7 @@ main{
   gap: 20px;
 }
 .colomn{
-  padding: 10px;
+  padding: 20px;
 }
 .card {
   padding: 35px;
@@ -208,9 +208,9 @@ p{
   
 }
 .mad-skills-img{
-  width: 100%; /* Ajuste la taille comme souhaité */
-  height: auto; /* Garde les proportions */
-  margin-bottom: 10px; /* Espace entre les images */
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
 }
 #art{
   text-align: center;
@@ -268,7 +268,7 @@ footer{
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
-/* twitter*/
+
 .containerTwo:hover {
   background-color: #00acee;
   transition-duration: 0.3s;
@@ -280,7 +280,7 @@ footer{
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
-/* Whatsapp*/
+
 .containerFour:hover {
   background-color: #128c7e;
   transition-duration: 0.3s;
@@ -315,13 +315,6 @@ footer{
     opacity: 1;
   }
 }
-
-
-  
-  
-
-
-
 /*TABETTE*/
 
 @media (min-width:700px) {
@@ -481,7 +474,7 @@ footer{
   .colomn{
   display: flex;
   flex-direction: column;
-  padding: 45px;
+  padding: 100px;
   }
   .card{
     width: 100%;
@@ -511,8 +504,8 @@ footer{
   }
 
   .mad-skills-img {
-    max-width: 300px; /* Limite la largeur pour les grands écrans */
-    margin-top: 10px; /* Espace entre les images */
+    max-width: 300px;
+    margin-top: 10px; 
 }
 
 .images-container {
