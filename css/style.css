@@ -5,8 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-body{
-  background: linear-gradient(2deg, #d7b8ff, #868587, #7117e7);
+body{ 
+  background: linear-gradient(2deg, #6d00fc, #06c7ca, #b48157);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 35s ease infinite;
@@ -45,6 +45,9 @@ body{
   position: relative;
   height: 100%;
 }
+.slider img{
+  filter: 40%;
+  -webkit-filter: contrast(40%); }
 
 .slider-content{
   text-align: center;
@@ -363,10 +366,7 @@ footer{
 
 
 @media (min-width: 1200px) {
-  body {
-    background-color: blueviolet;
-  }
-
+ 
   .slider {
     height: 100%;
     position: relative;
@@ -378,7 +378,7 @@ footer{
     top: 50%;
     left: 50%;
     text-align: center;
-    transform: translate(-50%);
+    transform: translate(-50% -50%);
   }
 
   .image {

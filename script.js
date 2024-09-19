@@ -3,7 +3,7 @@ var images = document.querySelector(".slider img");
 function dark(){
     if(element.classList.length === 0)
         {
-            images.src = "img/contact.jpg"
+            images.src = "img/slider-couleur.webp"
         }else 
         { console.log(images)
             images.src = "img/slider.webp"
