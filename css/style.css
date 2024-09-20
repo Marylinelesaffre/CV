@@ -5,8 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-body{ 
-  background: linear-gradient(2deg, #6d00fc, #06c7ca, #b48157);
+body {
+  background: linear-gradient(2deg,#966a47 , #cdd3d8, #2f4866);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 35s ease infinite;
@@ -15,19 +15,37 @@ body{
 }
 
 @-webkit-keyframes AnimationName {
-  0%{background-position:51% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:51% 0%}
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
 }
 @-moz-keyframes AnimationName {
-  0%{background-position:51% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:51% 0%}
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
 }
 @keyframes AnimationName {
-  0%{background-position:51% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:51% 0%}
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
 }
 @keyframes scrollBg {
   from {
@@ -36,7 +54,6 @@ body{
   to {
     transform: translateY(-330px);
   }
-  
 }
 
 /*MOBILE FIRST*/
@@ -45,28 +62,27 @@ body{
   position: relative;
   height: 100%;
 }
-.slider img{
+.slider img {
   filter: 40%;
-  -webkit-filter: contrast(40%); }
+  -webkit-filter: contrast(40%);
+}
 
-.slider-content{
+.slider-content {
   text-align: center;
   color: white;
   position: absolute;
   top: 50%;
   left: 50px;
-  translate: (-50%,-50%);
- 
+  
 }
 .fa-brands {
   color: white;
 }
-p{
+p {
   color: white;
-  
 }
 .navbar {
-  background-color:transparent;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 50%;
@@ -83,7 +99,6 @@ p{
   flex-direction: column;
   justify-content: center;
   width: 30px;
-  
 }
 
 .nav-burger .open {
@@ -95,21 +110,20 @@ p{
 }
 .nav {
   list-style-type: none;
-  display: none; 
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  top: 60px; 
+  top: 60px;
   left: 0;
   width: 100%;
   background: black;
   position: absolute;
-  z-index: 999; 
+  z-index: 999;
 }
 .nav.active {
   display: flex;
 }
-
 
 .nav a {
   display: block;
@@ -119,28 +133,30 @@ p{
   padding: 10px;
 }
 .container-dark {
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
-  z-index: 1000; 
-  
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
-.button-dark{
+.button-dark {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.dark-mode{
+.dark-mode {
   background: linear-gradient(2deg, #000000, #b7b1b1, #000000);
   animation: AnimationDarkMode 35s ease infinite;
   color: rgb(0, 0, 0);
 }
 
-.button{color:rgb(0, 0, 0); background-color:rgb(255, 255, 255);}
+.button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
 
-main{
+main {
   flex: 1;
   margin-bottom: 50px;
 }
@@ -149,7 +165,6 @@ main{
   color: white;
   text-align: center;
   font-size: 35px;
-  
 }
 
 .image {
@@ -159,16 +174,15 @@ main{
   margin-top: 30px;
   width: 200px;
   height: 200px;
-
 }
-#about-me-section{
+#about-me-section {
   min-height: 100%;
 }
 
 .photo {
   text-align: center;
 }
-.presentation{
+.presentation {
   color: white;
   height: fit-content;
   background-color: transparent;
@@ -178,57 +192,52 @@ main{
   padding: 15px;
   gap: 20px;
 }
-.colomn{
+.colomn {
   padding: 20px;
 }
 .card {
   padding: 35px;
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.45);
   margin-top: 10px;
 }
-.mad-skill-img{
-  width: 300px;
-  height: 300px;
+.mad-skill-img {
+  height: 250px;
   padding: 10px;
 }
-.images-container{
+.images-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-p{
+p {
   padding: 10px 0px;
 }
-.mad-skills{
+.mad-skills {
   text-align: center;
-  
-  
 }
-.mad-skills-img{
-  width: 100%; 
-  height: auto; 
-  margin-bottom: 10px; 
+.mad-skills-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
-#art{
+#art {
   text-align: center;
   color: black;
 }
 
-#experiences-section{
+#experiences-section {
   min-height: 100%;
   padding: 10px;
 }
- #experience{
+#experience {
   height: 50%;
-  
 }
-#contact-section{
+#contact-section {
   min-height: 100%;
 }
-footer{
+footer {
   text-align: center;
   background-color: black;
   color: white;
@@ -236,11 +245,10 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  
 }
 
 /*reseau*/
-.div-social { 
+.div-social {
   height: fit-content;
   background-color: transparent;
   display: flex;
@@ -269,11 +277,6 @@ footer{
   transform: scale(1.2);
 }
 
-.containerTwo:hover {
-  background-color: #00acee;
-  transition-duration: 0.3s;
-  transform: scale(1.2);
-}
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
@@ -282,7 +285,7 @@ footer{
 }
 
 .containerFour:hover {
-  background-color: #128c7e;
+  background-color: #5cc7ad;
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
@@ -317,18 +320,17 @@ footer{
 }
 /*TABETTE*/
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
   body {
     background-color: blue;
   }
-.slider{
-  position: relative;
-  
-}
+  .slider {
+    position: relative;
+  }
 
   .slider-content {
     font-size: 40px;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -341,25 +343,23 @@ footer{
     margin-top: 20px;
   }
   ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
   }
- li{
-  text-align: center;
- }
-.colonne p{
-  text-align: center;
-}
-#skills{
-  text-align: center;
-}
+  li {
+    text-align: center;
+  }
+  .colonne p {
+    text-align: center;
+  }
+  .skills {
+    text-align: center;
+  }
 }
 
 /*PC*/
 
-
 @media (min-width: 1200px) {
- 
   .slider {
     height: 100%;
     position: relative;
@@ -379,23 +379,21 @@ footer{
     height: 300px;
   }
 
- 
-  .photo p{
+  .photo p {
     font-size: 30px;
   }
-  .navbar{
+  .navbar {
     cursor: pointer;
     width: 50%;
     height: 50px;
-
- }
+  }
 
   .nav {
     display: flex;
-    position: static; 
+    position: static;
     flex-direction: row;
-    background: transparent; 
-    width: auto; 
+    background: transparent;
+    width: auto;
     font-size: 20px;
     text-align: center;
   }
@@ -406,7 +404,7 @@ footer{
     margin-top: 20px;
   }
   /*reseau pc*/
-  .div-social { 
+  .div-social {
     height: fit-content;
     background-color: transparent;
     display: flex;
@@ -415,12 +413,11 @@ footer{
     padding: 15px;
     gap: 20px;
   }
-  
+
   /* for all social containers*/
   .socialContainer {
     overflow: hidden;
     transition-duration: 0.3s;
-    
   }
   /* instagram*/
   .containerOne:hover {
@@ -428,7 +425,7 @@ footer{
     transition-duration: 0.3s;
     transform: scale(1.2);
   }
-  
+
   /* linkdin*/
   .containerThree:hover {
     background-color: #0072b1;
@@ -441,79 +438,77 @@ footer{
     transition-duration: 0.3s;
     transform: scale(1.2);
   }
-  
+
   .socialContainer:active {
     transform: scale(0.9);
     transition-duration: 0.3s;
   }
-  
+
   .socialSvg {
     width: 17px;
   }
-  
+
   .socialSvg path {
     fill: rgb(255, 255, 255);
   }
-  
+
   .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
   }
-  
+
   @keyframes slide-in-top {
     0% {
       transform: translateY(-50px);
       opacity: 0;
     }
-  
+
     100% {
       transform: translateY(0);
       opacity: 1;
     }
   }
 
-  .colomn{
-  display: flex;
-  flex-direction: column;
-  padding: 100px;
+  .colomn {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+
   }
-  .card{
+  .card {
     width: 100%;
   }
 
-  #right{
+  #right {
     width: 50%;
     align-self: flex-start;
     text-align: center;
   }
-  #left{
+  #left {
     width: 50%;
     align-self: flex-end;
     text-align: center;
   }
-  li{
+  li {
     list-style-type: none;
   }
-  .nav-burger{
+  .nav-burger {
     display: none;
   }
-  #experience{
+  #experience {
     text-align: center;
   }
-  #experiences-section{
+  #experiences-section {
     padding: 45px;
   }
 
-  .mad-skills-img {
-    max-width: 300px;
-    margin-top: 10px; 
-}
+  .mad-skill-img {
+    height: 350px;
+    width: 350px;
+    margin-top: 10px;
+     }
 
-.images-container {
+  .images-container {
     flex-direction: row;
     justify-content: center;
-    
+  }
 }
-
-}
-
-
