@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(2deg,#966a47 , #cdd3d8, #2f4866);
+  background: linear-gradient(2deg, #966a47, #cdd3d8, #2f4866);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 35s ease infinite;
@@ -56,8 +56,8 @@ body {
   }
 }
 
-/*MOBILE FIRST*/
-
+/*****MOBILE FIRST*****/
+/*header mobile first*/
 .slider {
   position: relative;
   height: 100%;
@@ -73,10 +73,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50px;
-  
-}
-.fa-brands {
-  color: white;
 }
 p {
   color: white;
@@ -132,6 +128,7 @@ p {
   line-height: 1.5;
   padding: 10px;
 }
+/* dark mode */
 .container-dark {
   position: absolute;
   top: 10px;
@@ -144,29 +141,28 @@ p {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .dark-mode {
   background: linear-gradient(2deg, #000000, #b7b1b1, #000000);
   animation: AnimationDarkMode 35s ease infinite;
   color: rgb(0, 0, 0);
 }
-
 .button {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
-
+/*fin header mobile first*/
+/*debut main mobile first*/
 main {
   flex: 1;
   margin-bottom: 50px;
 }
-
+/*titres des sections*/
 .title {
   color: white;
   text-align: center;
   font-size: 35px;
 }
-
+/*section about me mobil first*/
 .image {
   margin-bottom: 10px;
   border-radius: 50%;
@@ -192,6 +188,7 @@ main {
   padding: 15px;
   gap: 20px;
 }
+/*compétences*/
 .colomn {
   padding: 20px;
 }
@@ -202,31 +199,19 @@ main {
   background-color: rgba(255, 255, 255, 0.45);
   margin-top: 10px;
 }
-.mad-skill-img {
-  height: 250px;
-  padding: 10px;
-}
-.images-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 p {
   padding: 10px 0px;
 }
-.mad-skills {
-  text-align: center;
-}
-.mad-skills-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
+
 #art {
   text-align: center;
   color: black;
 }
-
+/* icone */
+.fa-brands {
+  color: white;
+}
+/*derniere section mobil first*/
 #experiences-section {
   min-height: 100%;
   padding: 10px;
@@ -236,15 +221,6 @@ p {
 }
 #contact-section {
   min-height: 100%;
-}
-footer {
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 /*reseau*/
@@ -306,7 +282,7 @@ footer {
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
 }
-
+/* animation icone */
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
@@ -318,16 +294,25 @@ footer {
     opacity: 1;
   }
 }
-/*TABETTE*/
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/******TABETTE******/
 
 @media (min-width: 700px) {
   body {
     background-color: blue;
   }
+  /* header */
   .slider {
     position: relative;
   }
-
   .slider-content {
     font-size: 40px;
     position: absolute;
@@ -336,12 +321,14 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  /* titre section */
   .title {
     color: white;
     text-align: center;
     font-size: 50px;
     margin-top: 20px;
   }
+  /* cards competences */
   ul {
     list-style-type: none;
     padding: 0;
@@ -357,31 +344,10 @@ footer {
   }
 }
 
-/*PC*/
+/******PC******/
 
 @media (min-width: 1200px) {
-  .slider {
-    height: 100%;
-    position: relative;
-  }
-
-  .slider-content {
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50% -50%);
-  }
-
-  .image {
-    width: 300px;
-    height: 300px;
-  }
-
-  .photo p {
-    font-size: 30px;
-  }
+  /* header */
   .navbar {
     cursor: pointer;
     width: 50%;
@@ -397,12 +363,73 @@ footer {
     font-size: 20px;
     text-align: center;
   }
+  .nav-burger {
+    display: none;
+  }
+  .slider {
+    height: 100%;
+    position: relative;
+  }
+
+  .slider-content {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50% -50%);
+  }
+  /*  about-me */
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo p {
+    font-size: 30px;
+  }
   .title {
     color: white;
     text-align: center;
     font-size: 60px;
     margin-top: 20px;
   }
+  /* experiences section */
+  .colomn {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  #right {
+    width: 50%;
+    align-self: flex-start;
+    text-align: center;
+  }
+  #left {
+    width: 50%;
+    align-self: flex-end;
+    text-align: center;
+  }
+  li {
+    list-style-type: none;
+    color: black;
+  }
+  #art {
+    text-align: center;
+    font-size: large;
+}
+
+  #experience {
+    text-align: center;
+  }
+  #experiences-section {
+    padding: 45px;
+  }
+
   /*reseau pc*/
   .div-social {
     height: fit-content;
@@ -455,7 +482,7 @@ footer {
   .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
   }
-
+  /* animation icones */
   @keyframes slide-in-top {
     0% {
       transform: translateY(-50px);
@@ -466,49 +493,5 @@ footer {
       transform: translateY(0);
       opacity: 1;
     }
-  }
-
-  .colomn {
-    display: flex;
-    flex-direction: column;
-    padding: 100px;
-
-  }
-  .card {
-    width: 100%;
-  }
-
-  #right {
-    width: 50%;
-    align-self: flex-start;
-    text-align: center;
-  }
-  #left {
-    width: 50%;
-    align-self: flex-end;
-    text-align: center;
-  }
-  li {
-    list-style-type: none;
-  }
-  .nav-burger {
-    display: none;
-  }
-  #experience {
-    text-align: center;
-  }
-  #experiences-section {
-    padding: 45px;
-  }
-
-  .mad-skill-img {
-    height: 350px;
-    width: 350px;
-    margin-top: 10px;
-     }
-
-  .images-container {
-    flex-direction: row;
-    justify-content: center;
   }
 }

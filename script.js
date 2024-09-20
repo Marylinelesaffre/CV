@@ -5,7 +5,7 @@ function dark(){
         {
             images.src = "img/slider-couleur.webp"
         }else 
-        { console.log(images)
+        { 
             images.src = "img/slider.webp"
         }
 }
@@ -16,7 +16,6 @@ function toggleMenu() {
 }
 
 function myFunction(){
-    console.log(element)
     element.classList.toggle("dark-mode");
     dark()
 }
